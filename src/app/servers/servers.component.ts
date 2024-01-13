@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ServersComponent {
   name = 'Abdullah';
+  id = 104;
 
   methodTesting(){
-    return 'Successful Method Testing!'
+    return 'Successful Method Testing!';
   }
 }
