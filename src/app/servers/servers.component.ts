@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-servers',
   templateUrl: './servers.component.html',
-  styleUrl: './servers.component.css'
+  styleUrls: ['./servers.component.css'] 
 })
 export class ServersComponent {
   name = 'Abdullah';
@@ -29,4 +30,5 @@ export class ServersComponent {
     this.serverName = (<HTMLInputElement>event.target).value;
 
   }
+  
 }
