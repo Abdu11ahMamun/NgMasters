@@ -12,6 +12,8 @@ export class ServersComponent {
   allowNewServers = false;
   OnActive = 'Ready to go';
   serverName = '';
+  serverCreated= false;
+
   constructor (){
     setTimeout(()=>{
       this.allowNewServers = true;
@@ -30,5 +32,8 @@ export class ServersComponent {
     this.serverName = (<HTMLInputElement>event.target).value;
 
   }
-  
+  serverCreationStatus='No server was created';
+  OncreateServer(){
+    this.serverCreated= true;
+  }
 }
